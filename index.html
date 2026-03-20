@@ -167,38 +167,7 @@ background:#fff;display:flex;justify-content:center;align-items:center;
 z-index:2000;font-size:24px;font-weight:600;
 }
 
-@media(max-width:900px){
-
-section{padding:64px 20px}
-
-.grid{
-grid-template-columns:1fr;
-gap:20px;
-}
-
-.card{
-border-radius:20px;
-}
-
-.card img{
-height:220px;
-}
-
-.hero h1{font-size:36px}
-
-header{padding:16px 20px}
-
-.btn{
-width:100%;
-max-width:280px;
-}
-
-}
-.info-grid{grid-template-columns:1fr}
-.hero h1{font-size:40px}
-header{padding:20px}
-}
-/* stagger animation */
+* stagger animation */
 .stagger .card{opacity:0;transform:translateY(40px)}
 .stagger.show .card{opacity:1;transform:translateY(0)}
 .stagger.show .card:nth-child(1){transition-delay:.1s}
@@ -233,6 +202,89 @@ display:none;z-index:1500;text-align:center;
 
 /* counter */
 .counter{text-align:center;font-size:20px;margin-top:10px;color:#e53935}
+
+/* ================= MOBILE FIX ================= */
+@media(max-width:900px){
+
+section{padding:64px 20px}
+
+.grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.card{
+border-radius:20px;
+}
+
+.card img{
+height:220px;
+}
+
+.hero{
+padding:20px;
+height:auto;
+min-height:100vh;
+}
+
+.hero img{
+height:140px !important;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.hero .info{
+gap:10px;
+font-size:14px;
+}
+
+header{
+padding:16px 20px;
+flex-direction:column;
+gap:10px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+width:100%;
+max-width:280px;
+}
+
+.info-grid{
+grid-template-columns:1fr;
+}
+
+/* fix card tư vấn */
+section .fade div[style*="max-width:520px"]{
+padding:30px 20px !important;
+}
+
+/* fix contact */
+#contact > div{
+gap:12px !important;
+}
+
+#contact > div > div{
+width:100% !important;
+}
+
+iframe{
+height:300px;
+}
+
+}
+/* ============================================ *//
 
 </style>
 </head>
@@ -526,14 +578,6 @@ if(window.scrollY>50){header.classList.add('scrolled')}else{header.classList.rem
 
 topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'})
 </script>
-
-
-
-
-
-
-
-
 
 <!-- zoom modal -->
 <div id="zoom" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:none;align-items:center;justify-content:center;z-index:2000">

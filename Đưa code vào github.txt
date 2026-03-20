@@ -13,4 +13,9 @@ $ git remote add origin https://github.com/hatuanduong95-lgtm/vkitchen-landing.g
 #Kiểm tra kết nối
 $ git remote -v
 
-#
+#Add lên GitHub
+$ git add .
+
+#Dán nhãn
+$ git commit -m"init project"
+$ git push origin master
