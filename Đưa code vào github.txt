@@ -1,0 +1,16 @@
+$ git config --global user.name "hatuanduong95-lgtm"
+$ git config --global user.email hatuanduong95@gmail.com
+
+#Kiểm tra xem
+$ git config --list
+
+#Thêm git vào folder
+$ git init
+
+#Code này lấy trong repo
+$ git remote add origin https://github.com/hatuanduong95-lgtm/vkitchen-landing.git
+
+#Kiểm tra kết nối
+$ git remote -v
+
+#
